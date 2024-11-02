@@ -1,0 +1,282 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #eae7e7;
+	font-family: Verdana;
+	font-size: 14px;
+}
+#header {
+	background: #742126;
+	color: white;
+	padding: 30px;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+#menu {
+	width: 0;
+	height: 100%;
+	overflow-x: hidden;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: 1s;
+}
+
+#menu ul li {
+	list-style-type: none;
+	padding-bottom: 20px;
+}
+
+#menu ul li a {
+	text-decoration: none;
+	color: gray;
+	font-size: 24px;
+	transition: 0.3s;
+}
+
+#menu ul li a:hover {
+	color: white;
+	transition: 0.3s;
+}
+
+.closeBtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px !important;
+}
+.apexlist ul{
+	background: #742126;
+	display: grid;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	border-radius: 8px;
+	text-align: center;
+	color:white;
+}
+.apexlist ul li{
+	background: black;
+	border-radius: 5px;
+	list-style-type:none;
+	transition : 1.5s;
+}
+.apexlist ul li a{
+	text-decoration:none;
+	color:inherit;
+}
+
+.apexlist ul li:hover{
+	background: #856767;
+	border-radius: 5px;
+	list-style-type:none;
+	font-size: 120%;
+	transition: 1.5s;
+}
+.img1 {
+	margin-bottom:2%;
+}
+#footer {
+	background: #742126;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+.registrationform{
+  position: center;
+  max-width: 430px;
+  width: 100%;
+  background: #5e0000;
+  padding: 34px;
+  border-radius: 6px;
+  margin-top:5px;
+}
+.registrationform h2{
+	color:white;
+	position: center;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.registrationform form{
+  margin-top: 30px;
+}
+.registrationform form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: 0px;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+  border: 1.5px solid #C7BEBE;
+  border-radius: 6px;
+
+}
+
+
+form .policy{
+  display: flex;
+  align-items: center;
+}
+form h3{
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: black;
+  letter-spacing: 1px;
+  border: none;
+  background: #856767;
+  cursor: pointer;
+  transition:1s;
+}
+.input-box.button input:hover{
+  background: white;
+  color: black;
+  transition:1s;
+}
+
+form .text h3{
+ color: #ffffff;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color: #4070f4;
+  text-decoration: none;
+}
+form .text h3 a:hover{
+  text-decoration: underline;
+}
+.card {
+	background: #fcf6eb;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 10px;
+	transition: 0.5s;
+}
+
+.card img {
+	border-radius: 5px;
+	width: 40%;
+}
+.login-wrapper {
+  height: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:10px;
+}
+.form {
+  
+  width: 100%;
+  max-width: 380px;
+  padding: 80px 40px 40px;
+  background: #5e0000;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+.form h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  color: white;
+}
+.form .inputgrp {
+  position: relative;
+}
+.form .inputgrp input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px ;
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+.submit-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+.gallery:hover {
+  border: 1px solid black;
+  border-radius:5px;
+  transition:1.5s;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+#slideshowbox {
+	width: 40%;
+	margin: auto;
+	position: relative;
+}
+
+.previous, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.next {
+	right:0;
+}
+
+.previous:hover, .next:hover {
+	background-color: black;
+	opacity: 0.8;
+}
